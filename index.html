@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Frankfort Avenue Trolley Hop</title>
+	
 <!--stylesheets-->
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:700,900,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rammetto+One' rel='stylesheet' type='text/css'>
@@ -12,7 +13,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 </head>
 
@@ -28,10 +29,10 @@
 			<ul class="icon-wrap icon-effect-1 icon-effect-1a">
 				<li><a href="#location" class="icon icon-location">Mobile</a></li>
 				<li><a href="#about" class="icon icon-about">Mobile</a></li>
-				<li id="events"><a href="#events" class="icon icon-events">Mobile</a></li>
-				<li id="schedule"><a href="#schedule" class="icon icon-schedule">Mobile</a></li>
-				<li id="media"><a href="#media" class="icon icon-media">Mobile</a></li>
-				<li id="sponsors"><a href="#sponsors" class="icon icon-sponsors">Mobile</a></li>
+				<li id="#events"><a href="#events" class="icon icon-events">Mobile</a></li>
+				<li id="#schedule"><a href="#schedule" class="icon icon-schedule">Mobile</a></li>
+				<li id="#media"><a href="#media" class="icon icon-media">Mobile</a></li>
+				<li id="#sponsors"><a href="#sponsors" class="icon icon-sponsors">Mobile</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -153,8 +154,9 @@
 <!--******************** footer ********************
 ********************************************************-->
 <footer>
-	<img src="img/avenuelogo.png" alt="avenue logo">
-	<a href="www.frankfortave.com">www.frankfortave.com</a>
+	<!--<img src="img/avenuelogo.png" alt="avenue logo">
+	<a href="www.frankfortave.com">www.frankfortave.com</a>-->
+	<div id="backToTop"><a href="#"><img src="img/icon_top.png"></a></div>
 </footer>
 
 
@@ -163,26 +165,19 @@
 
 
 
-<!-- prefix free to deal with vendor prefixes -->
-<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
-
-<!-- jQuery -->
-<script src="http://thecodeplayer.com/uploads/js/jquery-1.7.1.min.js" type="text/javascript"></script>
 
 <script>
-/*jQuery time*/
 $(document).ready(function(){
+	var details = $("#accordion ul ul");
+	$(details).hide();
 	$("#accordion h3").click(function(){
-		//slide up all the link lists
-		$("#accordion ul ul").slideUp();
-		//slide down the link list below the h3 clicked - only if its closed
+		$(details).slideUp();
 		if(!$(this).next().is(":visible"))
 		{
 			$(this).next().slideDown();
 		}
 	})
 })
-
 </script>
 
 
