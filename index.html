@@ -13,18 +13,17 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+<!--scripts-->
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/addspace.js"></script>
+
 
 </head>
 
 <body>
-	<!--tablet desktop message--><div class="mobileonly"><h1>Mobile<br>First!</h1><h2>Adjust your browser window <br>width to view <br>mobile site in progress</h2><br><h2><a href="#" onClick="window.open('index.html','pagename','resizable,height=600,width=400'); return false;">OR CLICK HERE</a><br><br>Desktop and Tablet<br>version coming soon
-</h2></div>
-
-	<!--displays only mobile for now--><div class="mobilefirst">
 	
 	<header class="sticky">
-		Frankfort Avenue Trolley Hop
+		<div class="frankfort">Frankfort Avenue Trolley Hop</div><!--end frankfort-->
 		<nav>
 			<ul class="icon-wrap icon-effect-1 icon-effect-1a">
 				<li><a href="#location" class="icon icon-location">Mobile</a></li>
@@ -36,13 +35,34 @@
 			</ul>
 		</nav>
 	</header>
+	
+	<div class="topbkg">
+	<div class="topcontainer">
+
+		<img src="img/trolley.png" alt="trolley photo">
+
+		<div id ="upcoming">
+			<img src="img/horizontal_logo.png" alt="logo">
+			<span class="heading">Upcoming Hop</span><span class="date">October 31<sup>st</sup></span>Maker's Mark Halloween Hop
+		
+			<div class="socialmedia">
+			<img src="img/twitter.png" alt="twitter logo">
+			<img src="img/facebook.png" alt="facebook logo">
+			<img src="img/avenuelogo.png" alt="the avenue logo" class="theavenuelogo">
+			</div><!--end social media-->
+
+		</div><!--end upcoming-->
 
 
-	<img src="img/trolleyWithLogo.jpg" width="100%" alt="trolley photo">
-	
-	<div id ="upcoming"><span class="heading">Upcoming Hop</span><span class="date">October 31<sup>st</sup></span>Maker's Mark <br>Halloween Hop</div><!--end upcoming-->
-	
-	<a name="location"></a> 
+	</div><!--end topcontainer-->
+	</div>	
+
+
+		<div class="clear"></div>
+	</div><!--end container-->
+
+<a name="location"></a> 
+
 <!--********************-getting around page ********************
 ********************************************************-->
 
@@ -53,22 +73,40 @@
 	
 
 	<section>
+		<div class="locationinfo">
 		<h2>*Trolleys run 6:00pm until 10:30pm along Frankfort Avenue from Cannons Lane to River Road.</h2>
-		<a href="img/AvenueHopMap.pdf" class="button">View Map</a>
-		<br>	
+
+		<div class="iframecontainer">
+			<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=16&center=38.2548%2C-85.6912&key=AIzaSyCkXu875BDUAThZzMxswQ9gzNakb_D70ag"></iframe>
+		</div>
+		<div class="clear"></div>
+
+		<a href="img/AvenueHopMap.pdf" class="button">View Printer Friendly Version</a>
+		<div class="clear"></div>
+
+		</div>
 
 		<h1 class="iconbefore">Free Parking</h1>
-		<ul>
+		<ul class="parking">
 			<li><em>Butchertown Market</em>1201 Story Avenue</li>
 			<li><em>The Vernon Club and Lanes</em>1575 Story Avenue</li>
 			<li><em>Mellwood Arts and Entertainment Center</em> 1860 Mellwood Avenue and Delmont Avenue</li>
 			<li><em>American Printing House for the Blind</em> 1839 Frankfort Avenue</li>
 			<li><em>Third Lutheran Church</em>1864 Frankfort Avenue</li>
-			<li><em>Old Ready Electric Property</em>2030 Frankfort Avenue</li>
+			<li><em>Clifton Center</em>2117 Payne Street and Clifton Avenue</li>
+			<li><em>Clifton Christian Church</em>131 Vernon Avenue</li>
+			<li><em>Corner of Keats Avenue and Frankfort Avenue,</em>next to Irish Rover</li>
+			<li><em>Alley between Ewing Avenue and Peterson Avenue</em>behind Balance Therapeutic Massage</li>
+			<li><em>Crescent Hill United Methodist Church</em>201 S. Peterson Avenue and Frankfort Avenue</li>
+			<li><em>Franck Avenue and Frankfort Avenue</em></li>
+			<li><em>Margaret’s Consignment and Collectibles</em>2700 Frankfort Avenue alley between S. Bayly Avenue and Hite Avenue</li>
+			<li><em>Between S. Bayly Avenue and Hite Avenue</em>behind Crescent Hill Trading Company</li>
+			<li><em>St. Mark’s Episcopal Church</em>2822 Frankfort Avenue</li>
 		</ul>
 	</section>
 
 	<a name="about"></a> 
+	
 <!--********************-about page ********************
 ********************************************************-->
 
@@ -80,12 +118,15 @@
 
 	<section>
 		<h1>Explore the Clifton, Crescent Hill and Butchertown neighborhoods by way of a trolley ride!</h1>
+		<img src="img/trolley_with_people.jpg" alt="people on trolley" class="left">
+		<span class="nowraptext">The FAT Friday Trolley Hop was launched in 2004 and has become a signature event on Frankfort Avenue. Held year-round on the final Friday of every month from 6:00pm-10:30pm, this event draws attracts thousands of people to enjoy free trolley rides to participating shops, restaurants and galleries along the Frankfort, Mellwood and Story Avenue corridor. Many of the businesses host live music and entertainment, complimentary refreshments and special sales on trolley hop nights. The Frankfort Avenue Business Association relies on the support of member businesses to cover the cost of the trolley service so that it can be available for free to the public.</span>
 
-		The FAT Friday Trolley Hop was launched in 2004 and has become a signature event on Frankfort Avenue. Held year-round on the final Friday of every month from 6:00pm-10:30pm, this event draws attracts thousands of people to enjoy free trolley rides to participating shops, restaurants and galleries along the Frankfort, Mellwood and Story Avenue corridor. Many of the businesses host live music and entertainment, complimentary refreshments and special sales on trolley hop nights. The Frankfort Avenue Business Association relies on the support of member businesses to cover the cost of the trolley service so that it can be available for free to the public.
+		<div class="clear"></div>
 	</section>
 
 
 	<a name="events"></a> 
+
 <!--********************events page ********************
 ********************************************************-->
 
@@ -96,6 +137,7 @@
 
 
 	<section>
+
 		<h1>Special Events</h1>
 
 	<div id="accordion">
@@ -117,29 +159,30 @@
 
 	<h1>Participating Businesses</h1>
 
+
 	<div id="accordion">
 		<ul>
-			<h3 class="services">Services</h3>
+			<li><h3 class="services">Services</h3></li>
+				<ul>
+					<li><h2>businesses</h2></li>
+				</ul>
+			<li><h3 class="shopping">Shopping</h3></li>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+			<li><h3 class="gallery">Galleries</h3></li>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+			<li><h3 class="dining">Dining</h3></li>
 				<ul>
 					<li>businesses</li>
 				</ul>
-			<h3 class="shopping">Shopping</h3>
+			<li><h3 class="spirits">Spirits</h3></li>
 				<ul>
 					<li>Event details.</li>
 				</ul>
-			<h3 class="gallery">Galleries</h3>
-				<ul>
-					<li>Event details.</li>
-				</ul>
-			<h3 class="dining">Dining</h3>
-				<ul>
-					<li>businesses</li>
-				</ul>
-			<h3 class="spirits">Spirits</h3>
-				<ul>
-					<li>Event details.</li>
-				</ul>
-			<h3 class="community">Community</h3>
+			<li><h3 class="community">Community</h3></li>
 				<ul>
 					<li>Event details.</li>
 				</ul>
@@ -149,6 +192,221 @@
 	To help sponsor F.A.T. Friday and post an event <a href="mailto:contact@contact.com">contact us</a> for information.
 
 	</section>
+
+	<a name="schedule"></a> 
+
+<!--********************schedule page ********************
+********************************************************-->
+	<div class="clear"></div>
+
+	<div class="divider"><img src="img/smtrolley.png"></div>
+	<div class="title">2014 Schedule</div>
+	<div class="white"></div>
+	<div class="red"></div>
+
+	<section>
+
+
+
+
+	<div class="calendar">	
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Jan</div>
+				<div class="cal-day">31</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">Fundraiser for Crook Family</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Feb</div>
+				<div class="cal-day">28</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">March Madness Kick Off</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Mar</div>
+				<div class="cal-day">28</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info"><img src="img/smtrolley.png" alt="small trolley"></div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">April</div>
+				<div class="cal-day">25</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">Schlafly Hop</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">May</div>
+				<div class="cal-day">30</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info"><img src="img/smtrolley.png" alt="small trolley"></div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">June</div>
+				<div class="cal-day">27</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">Louisville Water Hop</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">July</div>
+				<div class="cal-day">25</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info"><img src="img/smtrolley.png" alt="small trolley"></div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Aug</div>
+				<div class="cal-day">29</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info"><img src="img/smtrolley.png" alt="small trolley"></div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Sept</div>
+				<div class="cal-day">26</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">10 Year Anniversary</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Oct</div>
+				<div class="cal-day">31</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">Maker's Mark Halloween Hop</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Nov</div>
+				<div class="cal-day">28</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info">Black Friday Holiday Hop</div>
+		</div><!--end month-->
+
+	<!--month-->
+		<div class="month">
+			<div class="side-date">
+				<div class="cal-top"><div class="disc left"></div> <div class="disc right"></div></div>
+				<div class="cal-btm">
+				<div class="cal-month">Dec</div>
+				<div class="cal-day">26</div>
+				</div><!--end cal btm-->
+			</div><!--end side date-->
+
+			<div class="side-info"><img src="img/smtrolley.png" alt="small trolley"></div>
+		</div><!--end month-->
+
+
+	</div><!--end calendar-->
+
+	
+
+	<div class="clear"></div>
+
+	</section>
+
+	<a name="sponsors"></a> 
+	
+<!--******************** sponsors page ********************
+********************************************************-->
+
+	<div class="divider"><img src="img/smtrolley.png"></div>
+	<div class="title">Sponsors</div>
+	<div class="white"></div>
+	<div class="red"></div>
+
+
+	<section>
+		<div class="corpsponsors">
+		<img src="img/sponsor_schlafly.png">
+		<img src="img/sponsor_mellwood.png">
+		<img src="img/sponsor_louwater.png">
+		<img src="img/sponsor_lougov.png">
+		<img src="img/sponsor_makers.png">
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
 
 
 <!--******************** footer ********************
@@ -161,8 +419,6 @@
 
 
 
-</div><!--end mobilefirst-->
-
 
 
 
@@ -170,7 +426,7 @@
 $(document).ready(function(){
 	var details = $("#accordion ul ul");
 	$(details).hide();
-	$("#accordion h3").click(function(){
+	$("#accordion li").click(function(){
 		$(details).slideUp();
 		if(!$(this).next().is(":visible"))
 		{

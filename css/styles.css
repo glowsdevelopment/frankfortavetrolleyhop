@@ -6,11 +6,11 @@ html, body, header{
 body{
 	background: rgba(252,252,252,1);
 	background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(181,219,220,1) 25%, rgba(28,146,151,1) 79%, rgba(0,133,138,1) 89%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,252,252,1)), color-stop(25%, rgba(181,219,220,1)), color-stop(79%, rgba(28,146,151,1)), color-stop(89%, rgba(0,133,138,1)));
+	background: -webkit-gradient(left top, left top, color-stop(0%, rgba(252,252,252,1)), color-stop(25%, rgba(181,219,220,1)), color-stop(79%, rgba(28,146,151,1)), color-stop(89%, rgba(0,133,138,1)));
 	background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(181,219,220,1) 25%, rgba(28,146,151,1) 79%, rgba(0,133,138,1) 89%);
 	background: -o-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(181,219,220,1) 25%, rgba(28,146,151,1) 79%, rgba(0,133,138,1) 89%);
 	background: -ms-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(181,219,220,1) 25%, rgba(28,146,151,1) 79%, rgba(0,133,138,1) 89%);
-	background: linear-gradient(to bottom, rgba(252,252,252,1) 0%, rgba(181,219,220,1) 25%, rgba(28,146,151,1) 79%, rgba(0,133,138,1) 89%);
+	background: linear-gradient(to top, rgba(252,252,252,1) 0%, rgba(181,219,220,1) 25%, rgba(28,146,151,1) 79%, rgba(0,133,138,1) 89%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#00858a', GradientType=0 );
 	background-repeat:no-repeat;
 	font-family: 'Maven Pro', sans-serif;
@@ -34,6 +34,14 @@ h2{
 	font-size: 1.25em;
 	margin:0;
 }
+
+.clear{
+	clear: both;
+	font-size: 0px;
+	line-height: 0px;
+	display: block;
+}
+
 header{
 	background:rgba(0,0,0, 0.7);
 	width:100%;
@@ -44,6 +52,7 @@ header{
 	font-weight:900;
 	font-size:1em;
 }
+
 
 /************************ Navigation ********************************
 *********************************************************************/
@@ -71,6 +80,7 @@ nav li{
     z-index: 100;  
     border-top: 0;  
 }  
+
 
 /************************ NAV ICONS ********************************
 *********************************************************************/
@@ -205,23 +215,32 @@ nav li{
 
 
 
-/************************ upcoming hop section ********************************
+/************************ top photo and upcoming hop section ********************************
 *********************************************************************/
 
-#upcoming{
-	font-weight:900;
-	text-transform:uppercase;
-	font-size:2em;
-	text-align:center;
-	background: url("../img/brickbkg.png");
-	background-repeat: no-repeat;
-	width: 100%;
-	padding:20px 0px;
+.topbkg{
+	overflow: hidden;
+	background-image: url('../img/brickbkg.png');
 }
+
+.topcontainer img {
+	width: 100%;
+}
+
+#upcoming {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	font-size: 1.5em;
+}
+
 #upcoming .heading{
 	font-family: 'Rammetto One', 'Maven Pro', sans-serif;
 	font-size:1em;
-	border-bottom:solid red 1px;
+	border-bottom: solid red 1px;
+	position: relative;
+	margin-top: 100px;
 }
 
 #upcoming .date{
@@ -240,6 +259,26 @@ nav li{
 sup{
 	text-transform:none;
 }
+
+
+/************************ social media icons *************************
+*********************************************************************/
+
+
+
+#upcoming .socialmedia img{
+	width: 8%;
+	height: 8%;
+	display:inline-block;
+	margin-top:15px;
+	margin-right: 15px;
+}
+
+#upcoming .socialmedia img.theavenuelogo {
+	width: 20%;
+	margin-bottom: 25px;
+}
+
 /************************ page divider ********************************
 *********************************************************************/
 
@@ -265,7 +304,7 @@ sup{
 	font-size:1.5em;
 	background:#000;
 	width:250px;
-	margin-left:20px;
+	margin-left: 15px;
 	padding: 5px 20px 5px 20px;
 	position:absolute;
     z-index:1;
@@ -333,6 +372,176 @@ a[name="location"] {
 	background:green;
 }*/
 
+/************************ getting around page ********************************
+*********************************************************************/
+
+iframe {
+	width: 100%;
+	height: 200px;
+}
+
+.locationinfo h2{
+	padding-bottom: 20px;
+}
+
+.locationinfo a.button{
+	width:100%;
+	text-align:center;
+}
+
+.parking li {
+	padding-bottom: 25px;
+	list-style:none;
+}
+
+.parking li em:first-child {
+	padding-top: 0px;
+}
+
+/************************ about page ********************************
+*********************************************************************/
+
+img.left {
+	width: 100%;
+}
+
+/************************ schedule page ********************************
+*********************************************************************/
+
+.calendar {
+	width: 100%;
+	float: left;
+	margin-right: .84034%;
+	display: inline;
+	margin-bottom: 2.5rem;
+	/*perspective*/
+	-webkit-perspective: 3300px;
+	-moz-perspective:3300px;
+	-ms-perspective:3300px;
+	-o-perspective:3300px;
+	perspective:3300px;
+}
+
+.month{
+	list-style: none;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	float: left;
+	margin: 10px;
+	/*transform-style*/
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	-o-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	/*transition*/
+	-webkit-transition:-webkit-transform 1s ease-in;
+	-moz-transition:-moz-transform 1s ease-in;
+	-o-transition:-o-transform 1s ease-in;
+	transition:transform 1s ease-in;
+}
+
+.month div {
+	/*backface-visibility*/
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+
+.side-info{
+	width: 90px;
+	height: 80px;
+	position: absolute;
+	background: #EE3123;
+	padding: 5px;
+	text-align: center;
+	padding-top: 15px;
+	/*transform*/
+	-webkit-transform:rotateY(-180deg);
+	-moz-transform:rotateY(-180deg);
+	-ms-transform:rotateY(-180deg);
+	-o-transform:rotateY(-180deg);
+	transform:rotateY(-180deg);
+}
+
+
+
+.month:hover{
+	/*transform*/
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	-o-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
+
+.side-date {
+	display: inline-block;
+	float: left;
+	width: 100px;
+	border: 2px solid black;
+	border-radius: 3px;
+	background: white;
+	color: black;
+	z-index: 100;
+}
+
+.cal-top {
+	height: 1rem;
+	margin: 5px;
+}
+
+.disc{
+	border-radius: 50%;
+	background: black;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+}
+.disc.right{
+	float: right;
+	margin-right: 10px;
+}
+
+.disc.left {
+	float: left;
+	margin-left: 10px;
+}
+
+.cal-btm { /*line above month*/
+	border-top: 2px solid black;
+	padding: .25rem 1rem;
+}
+
+.cal-month {
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #008388;
+	text-align: center;
+}	
+
+.cal-day {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 700;
+	color: #008388;
+}
+
+
+h4.event-title {
+	margin: 0px;
+	text-align: center;
+	font-size: .85em;
+}
+
+
+
 /************************ lists with icons ********************************
 *********************************************************************/
 
@@ -393,6 +602,11 @@ li em{
 
 #accordion ul{
 	padding:0;
+	column-count: 3;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-rule: 1px outset #fff;
+-webkit-column-rule: 1px outset #fff;
 }
 
 
@@ -461,6 +675,14 @@ li em{
 	text-transform: uppercase;
 }
 
+/************************ sponsors page ********************************
+*********************************************************************/
+
+.corpsponsors{
+	width:50%;
+}
+
+
 /************************ misc ********************************
 *********************************************************************/
 
@@ -501,69 +723,200 @@ footer{
 
 
 
-
-
-/************************ media queries to hide in development ********************************
+/************************ media queries tablet and above *************
 *********************************************************************/
 
-@media screen and (min-width:480px){ /*tablet and above*/
+@media screen and (min-width:480px){ 
 
-.mobilefirst{
-	display: none;
+#accordion {
+background: white;
+width: 100%;
+margin: auto 0;
+color: black;
+text-decoration: none;
+line-height: 27px;
+display: block;
+padding: 0;
+clear: both;
 }
 
-.mobileonly{
-	background: url('../img/mobilefirst.png');
-	background-repeat: no-repeat;
-	height: 1000px;
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 366px;
+#accordion ul {
+padding: 0;
 }
 
-.mobileonly h1{
-	color: white;
+#accordion h3 {
+font-size: 16px;
+line-height: 34px;
+cursor: pointer;
+background: rgba(0, 131, 136,0.5);
+padding-left: 1em;
+margin: 0;
+border-bottom: solid #008388 2px;
+clear: both;
+}
+
+#accordion li {
+list-style-type: none;
+}
+
+
+#accordion li h2{
+	clear:both;
+}
+
+}
+
+/************************ media queries tablet *************
+*********************************************************************/
+
+@media screen and (min-width:700px){ 
+
+.frankfort{
+	float: left;
+	width: 250px;
+	padding-top: 15px;
 	text-align: center;
-	position: relative;
-	top: 250px;
-	width: 366px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	border: none;
-	font-size: 4em;
-	text-transform: uppercase;
-	line-height:55px;
-}
-
-.mobileonly h2{
+	font-size: 1.35em;
 	text-align: center;
+	padding-left: 30px;
+}
+
+nav{
+	float: right;
+	width: 60%;
+	margin-bottom: 5px;
+}
+
+.sticky{
+	padding:10px;
+}
+
+.topcontainer {
+	background: green;
+	background-image: url('../img/brickbkg.png');
+	width: 100%;
+}
+
+.topcontainer img {
+	width: 50%;
+	float: left;
+}
+
+#upcoming {
+	float: right;
+	width: 50%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	height: 200px;
 	position: relative;
-	top: 185px;
+	top: 120px;
+	font-size: 1.25em;
+}
+
+#upcoming img {
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	margin-bottom: 10px;
+	float: none;
+}
+
+.logo img {
+	float: right;
+}
+
+.locationinfo{
+	width:100%;
+}
+
+.locationinfo h2{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding-right: 10px;
+	font-size: 1.15em;
+	line-height: 1.75;
+}
+
+.locationinfo a.button{
+	float: right;
+	width: auto;
+}
+
+.iframecontainer {
+	float: right;
+	width: 70%;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
+}
+
+ul.parking{
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-rule: 1px outset #fff;
+	-webkit-column-rule: 1px outset #fff;
+	-moz-column-rule: 1px outset #fff;
+}
+
+img.left {
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+span.nowraptext{
+	float: right;
+	width: 45%;
+	display: inline-block;
 }
 
 }
 
-@media screen and (max-width:480px){ /*mobile size*/
+/************************ media queries desktop *************
+*********************************************************************/
 
-.mobilefirst{
-	visibility:visible;
+@media screen and (min-width:1200px){ 
+
+.frankfort{
+	float: left;
+	margin: 0 10%;
+	font-size: 1.5em;
+	white-space: nowrap;
 }
 
-.mobileonly{
-	display:none;
+nav{
+	width: 50%;
+	padding-right: 0;
 }
 
+#upcoming{
+	font-size: 2.25em;
+}
+
+ul.parking{
+	column-count: 3;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-rule: 1px outset #fff;
+	-webkit-column-rule: 1px outset #fff;
+	-moz-column-rule: 1px outset #fff;
+}
+
+
 }
 
 
 
+/************************ media queries mobile *************
+*********************************************************************/
+
+@media screen and (max-width: 699px){
 
 
 
-
-
-
-
-
-
+}
