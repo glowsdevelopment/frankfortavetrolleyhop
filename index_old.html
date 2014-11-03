@@ -8,7 +8,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:700,900,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rammetto+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/responsiveslides.css">
 
 <!--favicon-->
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -16,19 +15,15 @@
 
 <!--scripts-->
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
+	<script src="js/addspace.js"></script>
 
-  	<script src="js/map.js"></script>
-  	<script src="js/responsiveslides.js"></script>
 
 </head>
 
 <body>
 	
 	<header class="sticky">
-		<div class="frankfort"><a href="#">Frankfort Avenue Trolley Hop</a></div><!--end frankfort-->
+		<div class="frankfort">Frankfort Avenue Trolley Hop</div><!--end frankfort-->
 		<nav>
 			<ul class="icon-wrap icon-effect-1 icon-effect-1a">
 				<li><a href="#location" class="icon icon-location"></a><span class="navtext">Map</span></li>
@@ -51,26 +46,22 @@
 			<span class="heading">Upcoming Hop</span><span class="date">October 31<sup>st</sup></span>Maker's Mark Halloween Hop
 		
 			<div class="socialmedia">
-			<a href="http://twitter.com"><img src="img/twitter.png" alt="twitter logo"></a>
-			<a href="https://www.facebook.com/FrankfortAvenue"><img src="img/facebook.png" alt="facebook logo"></a>
-			<a href="http://www.frankfortave.com"><img src="img/avenuelogo.png" alt="the avenue logo" class="theavenuelogo"></a>
+			<img src="img/twitter.png" alt="twitter logo">
+			<img src="img/facebook.png" alt="facebook logo">
+			<img src="img/avenuelogo.png" alt="the avenue logo" class="theavenuelogo">
 			</div><!--end social media-->
 
 		</div><!--end upcoming-->
 
 
 	</div><!--end topcontainer-->
-	</div><!--end topbkg-->	
+	</div>	
 
 
 		<div class="clear"></div>
 	</div><!--end container-->
 
 <a name="location"></a> 
-
-
- 
-
 
 <!--********************-getting around page ********************
 ********************************************************-->
@@ -85,101 +76,15 @@
 		<div class="locationinfo">
 		<h2>*Trolleys run 6:00pm until 10:30pm along Frankfort Avenue from Cannons Lane to River Road.</h2>
 
-		<div class="filters">
-			<ul>
-				Click on a category below to view participating businesses.<br>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="trolley" class="markertrolley">Trolley</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="parking" class="markerparking">Parking</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="community" class="markercommunity">Community</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="dining" class="markerdining">Dining</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="gallery" class="markergallery">Galleries</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="services" class="markerservices">Services</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="shopping" class="markershopping">Shopping</a></li>
-
-			  <li><a href="#" data-filterby="type" data-filtervalue="spirits" class="markerspirits">Spirits</a></li>
-			</ul>
-		</div><!--end filters-->
-
-	
-		<div class="map-canvas-container" id="map">
-		    <div class="map-canvas">
-		    <!--shopping markers-->
-		    	<div class="marker" data-type="shopping" data-lat="38.255706" data-lng="-85.729108">
-		            <div class="marker-info"><h3>Work the Metal</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2570795" data-lng="-85.72055940000001">
-		            <div class="marker-info"><h3>Eyedia, Design it again</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2621876" data-lng="-85.7134676">
-		            <div class="marker-info"><h3>Mellwood arts and entertainment center</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		         <div class="marker" data-type="shopping" data-lat="38.2621876" data-lng="-85.7134676">
-		            <div class="marker-info"><h3>BAZ and BEA Boutique</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2540742" data-lng="-85.7088999">
-		            <div class="marker-info"><h3>a readers corner</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2549629" data-lng="-85.70984899999996">
-		            <div class="marker-info"><h3>modern cult records</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2532812" data-lng="-85.7050003">
-		            <div class="marker-info"><h3>Lexie’s trading post</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2537544" data-lng="-85.70057259999999">
-		            <div class="marker-info"><h3>the tangerine closet</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2543672" data-lng="-85.6938197">
-		            <div class="marker-info"><h3>margaret’s consignment and collectibles</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.2546341" data-lng="-85.69294990000003">
-		            <div class="marker-info"><h3>just creations</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		        <div class="marker" data-type="shopping" data-lat="38.254705" data-lng="-85.6893852">
-		            <div class="marker-info"><h3>the urban farmhouse market</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-			<!--dining markers-->
-		        <div class="marker" data-type="dining" data-lat="38.253572" data-lng="-85.705002">
-		            <div class="marker-info"><h3>Comfy Cow</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-			<!--services markers-->
-		        <div class="marker" data-type="services" data-lat="38.256632" data-lng="-85.716483">
-		            <div class="marker-info"><h3>News 1</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-			<!--community markers-->
-		        <div class="marker" data-type="community" data-lat="38.254252" data-lng="-85.693433">
-		            <div class="marker-info"><h3>News 2</h3></div><!--end marker info-->
-		        </div><!--end marker-->
-
-		    </div><!--end map canvas-->
-		</div><!--end map canvas container-->
-		
+		<div class="iframecontainer">
+			<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=16&center=38.2548%2C-85.6912&key=AIzaSyCkXu875BDUAThZzMxswQ9gzNakb_D70ag"></iframe>
+		</div>
 		<div class="clear"></div>
 
 		<a href="img/AvenueHopMap.pdf" class="button">Printer Friendly Version</a>
-
 		<div class="clear"></div>
 
-		</div><!--end locationinfo-->
+		</div>
 
 		<h1 class="iconbefore">Free Parking</h1>
 		<ul class="parking">
@@ -212,7 +117,7 @@
 
 
 	<section>
-		<h1 class="centerheading">Explore the Clifton, Crescent Hill and Butchertown neighborhoods by way of a trolley ride!</h1>
+		<h1>Explore the Clifton, Crescent Hill and Butchertown neighborhoods by way of a trolley ride!</h1>
 		<img src="img/trolley_with_people.jpg" alt="people on trolley" class="left">
 		<span class="nowraptext">The FAT Friday Trolley Hop was launched in 2004 and has become a signature event on Frankfort Avenue. Held year-round on the final Friday of every month from 6:00pm-10:30pm, this event draws attracts thousands of people to enjoy free trolley rides to participating shops, restaurants and galleries along the Frankfort, Mellwood and Story Avenue corridor. Many of the businesses host live music and entertainment, complimentary refreshments and special sales on trolley hop nights. The Frankfort Avenue Business Association relies on the support of member businesses to cover the cost of the trolley service so that it can be available for free to the public.</span>
 
@@ -222,7 +127,7 @@
 
 	<a name="events"></a> 
 
-<!--******************** events page ********************
+<!--********************events page ********************
 ********************************************************-->
 
 	<div class="divider"><img src="img/smtrolley.png"></div>
@@ -235,30 +140,54 @@
 
 		<h1>Special Events</h1>
 
-	<div class="events">
+	<div id="accordion">
 		<ul>
-			<li><div class="eventcontainer"><img src="img/marker_services.png"><h2>Services</h2></div>
-				<div class="eventdetails"><h3>WaterSide at RiverPark Place<br>1501 River Road</h3>
-				Live music by Carla and MOB blues band, and The Main Street Association will sell tickets to their annual progressive dinner and offer food/wine samples, and a free photobooth for people to take souvenir photos!</div>
-				<div class="clear"></div>
-			</li>
-			<li><div class="eventcontainer"><img src="img/marker_dining.png"><h2>Dining</h2></div>
-				<div class="eventdetails"><h3>Copper and Kings<br>1121 East Washington Street</h3>
-				Nick Cave's Murder Ballads performed by members of Vice Tricks and the Revenants. Event begins at 7:00pm and includes cocktails, food and a costume contest. $2 discount for trolley hoppers – just use the code “trolleyhop” when purchasing tickets online. </div>
-				<div class="clear"></div>
-			</li>
-			<li><div class="eventcontainer"><img src="img/marker_spirits.png"><h2>Spirits</h2></div>
-				<div class="eventdetails"><h3>Crescent Hill Craft House <br>2636 Frankfort Avenue </h3>
-				Happy Hour with Bill Samuels Jr. at 5:30pm.</div>
-				<div class="clear"></div>
-			</li>
-			<li><div class="eventcontainer"><img src="img/marker_gallery.png"><h2>Galleries</h2></div>
-				<div class="eventdetails"><h3>Gallery K<br>1600 Story Avenue</h3>
-				Opening reception for the new show Never Never, which is about Fairytale, Folklore and the Supernatural. Come enjoy art and coffee.  </div>
-				<div class="clear"></div>
-			</li>
-			</ul>
-		</div><!--end events-->
+			<h3 class="services">WaterSide at RiverPark Place<span class="address">1501 River Road</span></h3>
+				<ul>
+					<li>Live music by Carla and MOB blues band, and The Main Street Association will sell tickets to their annual progressive dinner and offer food/wine samples, and a free photobooth for people to take souvenir photos! </li>
+				</ul>
+			<h3 class="shopping">A Reader's Corner Bookstore<span class="address">2044 Frankfort Avenue</span></h3>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+			<h3 class="gallery">ARCHITYPE Gallery<span class="address">2044 Frankfort Avenue</span></h3>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+		</ul>
+	</div><!--end accordion-->
+
+	<h1>Participating Businesses</h1>
+
+
+	<div id="accordion">
+		<ul>
+			<li><h3 class="services">Services</h3></li>
+				<ul>
+					<li><h2>businesses</h2></li>
+				</ul>
+			<li><h3 class="shopping">Shopping</h3></li>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+			<li><h3 class="gallery">Galleries</h3></li>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+			<li><h3 class="dining">Dining</h3></li>
+				<ul>
+					<li>businesses</li>
+				</ul>
+			<li><h3 class="spirits">Spirits</h3></li>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+			<li><h3 class="community">Community</h3></li>
+				<ul>
+					<li>Event details.</li>
+				</ul>
+		</ul>
+	</div><!--end accordion-->
 
 	To help sponsor F.A.T. Friday and post an event <a href="mailto:contact@contact.com">contact us</a> for information.
 
@@ -276,6 +205,9 @@
 	<div class="red"></div>
 
 	<section>
+
+
+
 
 	<div class="calendar">	
 
@@ -435,45 +367,14 @@
 			<div class="side-info"><img src="img/smtrolley.png" alt="small trolley"></div>
 		</div><!--end month-->
 
-		
 
 	</div><!--end calendar-->
 
-	<div class="imgcontainer">
-
-		<img src="img/collagephoto.jpg" alt="collagephoto">
-		</div>
+	
 
 	<div class="clear"></div>
 
-	
 	</section>
-
-
-<a name="media"></a> 
-<!--******************** media page ********************
-********************************************************-->
-
-	<div class="divider"><img src="img/smtrolley.png"></div>
-	<div class="title">Media</div>
-	<div class="white"></div>
-	<div class="red"></div>
-
-
-	<section>
-		<div class="photobkg">
-			<ul class="rslides">
-			  <li><img src="img/1.jpg" alt=""></li>
-			  <li><img src="img/2.jpg" alt=""></li>
-			  <li><img src="img/3.jpg" alt=""></li>
-			  <li><img src="img/4.jpg" alt=""></li>
-			  <li><img src="img/5.jpg" alt=""></li>
-			</ul>
-			<img src="img/horizontal_logo.png" alt="logo" width="40%" style="display:block; margin: 0 auto">
-			<h2><a href"mailto:contact@contact.com">Submit a Photo </a></h2>
-		</div>
-	</section>
-
 
 	<a name="sponsors"></a> 
 	
@@ -487,8 +388,6 @@
 
 
 	<section>
-		
-		<h1>Corporate Sponsors</h1>
 		<div class="corpsponsors">
 		<img src="img/sponsor_schlafly.png">
 		<img src="img/sponsor_mellwood.png">
@@ -497,8 +396,7 @@
 		<img src="img/sponsor_makers.png">
 		</div>
 
-		<h1>Business Partners</h1>
-			9th District Councilwoman Tina Ward-Pugh, 15ThousandFarmers, A Reader's Corner Bookstore, Architype Gallery, BAZ and BEA, Clifton Center, The Comfy Cow, Consider Boutique, Copper and Kings, Core Fluency Pilates, Crescent Hill Radio, Crescent Hill Craft House, Eclipse Bank, El Mundo, eyedia, Fierce Salon, Frankfort Avenue Beer Depot, Gallery K, Heine Brothers' Coffee, Homemade Ice Cream and Pie Kitchen, The Irish Rover, Just Creations, Lettersong Calligraphy, Lexie’s Trading Post, Louisville Water Company, Maker’s Mark, Margaret’s Consignment, Mellwood Art Center, Modern Cult Records, Porcini, Property Management of Louisville, Surroundings LLC, Sweet Surrender, The Tangerine Closet, The Urban Farmhouse Market, Third Lutheran Church, Varanese, Vint, Waterside at RiverPark Place, and The Wine Rack. 
+
 
 	</section>
 
@@ -514,15 +412,31 @@
 <!--******************** footer ********************
 ********************************************************-->
 <footer>
-	<div id="backToTop"><a href="#">Back to Top</a></div>
+	<!--<img src="img/avenuelogo.png" alt="avenue logo">
+	<a href="www.frankfortave.com">www.frankfortave.com</a>-->
+	<div id="backToTop"><a href="#"><img src="img/icon_top.png"></a></div>
 </footer>
 
 
+
+
+
+
 <script>
-  $(function() {
-    $(".rslides").responsiveSlides();
-  });
+$(document).ready(function(){
+	var details = $("#accordion ul ul");
+	$(details).hide();
+	$("#accordion li").click(function(){
+		$(details).slideUp();
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+})
 </script>
+
+
 
 </body>
 

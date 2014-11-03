@@ -28,6 +28,7 @@ a:hover{
 h1{
 	border-bottom:solid #EE3123 3px;
 	padding-bottom: 10px;
+
 }
 
 h2{
@@ -42,6 +43,10 @@ h2{
 	display: block;
 }
 
+
+
+/************************ header ********************************
+*********************************************************************/
 header{
 	background:rgba(0,0,0, 0.7);
 	width:100%;
@@ -52,6 +57,14 @@ header{
 	font-weight:900;
 	font-size:1em;
 }
+
+.frankfort a {
+text-decoration: none;
+color: #EE3123;
+}
+
+
+
 
 
 /************************ Navigation ********************************
@@ -71,6 +84,8 @@ nav li{
 	width:15%;
 
 }
+
+
 
 .sticky {  
     position: fixed;  
@@ -228,11 +243,15 @@ nav li{
 }
 
 #upcoming {
-	width: 80%;
 	text-align: center;
 	margin: 0 auto;
 	padding-bottom: 40px;
 	font-size: 1.5em;
+	margin: 10px auto;
+}
+
+#upcoming img {
+	width: 75%;
 }
 
 #upcoming .heading{
@@ -240,7 +259,7 @@ nav li{
 	font-size:1em;
 	border-bottom: solid red 1px;
 	position: relative;
-	margin-top: 100px;
+	display: inline-block;
 }
 
 #upcoming .date{
@@ -276,9 +295,14 @@ sup{
 
 #upcoming .socialmedia img.theavenuelogo {
 	width: 20%;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 
+.socialmedia{
+	background: rgba(0,0,0,0.5);
+	margin-top: 10px;
+	cursor: pointer;
+}
 /************************ page divider ********************************
 *********************************************************************/
 
@@ -374,18 +398,143 @@ a[name="location"] {
 
 /************************ getting around page ********************************
 *********************************************************************/
-
-iframe {
-	width: 100%;
-	height: 200px;
+.map-canvas-container {
+    overflow: hidden;
+    height: 500px;
+    width:100%;
+}
+.map-canvas-container .map-canvas {
+    height: 575px;
+}
+.map-canvas-container .map-canvas .infoBox {
+    background: #ffffff !important;
+    font-size: 16px !important;
+    padding: 20px !important;
+    color: #000000 !important;
+    width: 200px !important;
 }
 
+.map-canvas-container .map-canvas .infoBox h3 {
+    margin-top: 0 !important;
+}
+
+.filters a {
+	text-decoration: none;
+	color: white;
+}
+
+.filters li a:hover {
+	color: #008388;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.filters li {
+	border-bottom: dotted 2px white;
+	color: black;
+	padding-left: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.2em;
+	background: rgba(0,0,0,0.3);
+}
+
+.filters ul {
+	list-style: none;
+	line-height: 2;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.filters {
+	background: rgba(0,0,0,0.3);
+	padding:10px;
+}
+
+
+a.markertrolley {
+	background: url('../img/marker_trolley.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 60%;
+	display: block;
+}
+
+a.markerparking {
+	background: url('../img/marker_parking.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 60%;
+	display: block;
+}
+
+a.markercommunity {
+	background: url('../img/marker_community.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 69%;
+	display: block;
+}
+
+a.markerdining {
+	background: url('../img/marker_dining.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 54%;
+	display: block;
+}
+
+a.markergallery {
+	background: url('../img/marker_gallery.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 64%;
+	display: block;
+}
+
+a.markerservices {
+	background: url('../img/marker_services.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 59%;
+	display: block;
+}
+
+a.markershopping {
+	background: url('../img/marker_shopping.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 60%;
+	display: block;
+}
+
+a.markerspirits {
+	background: url('../img/marker_spirits.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 30px;
+	width: 53%;
+	display: block;
+}
+
+
+
 .locationinfo h2{
+text-align: center;
 	padding-bottom: 20px;
+	font-size:1em;
 }
 
 .locationinfo a.button{
-	width:100%;
+	width: 60%;
+margin: 10px auto;
 	text-align:center;
 }
 
@@ -403,6 +552,12 @@ iframe {
 
 img.left {
 	width: 100%;
+	padding-bottom: 10px;
+}
+
+h1.centerheading{
+	text-align:center;
+	font-size:1.2em;
 }
 
 /************************ schedule page ********************************
@@ -540,6 +695,10 @@ h4.event-title {
 	font-size: .85em;
 }
 
+.imgcontainer img{
+	width:100%;
+}
+
 
 
 /************************ lists with icons ********************************
@@ -564,124 +723,71 @@ li em{
 }
 
 
-/************************ accordion ********************************
+/************************ special events ********************************
 *********************************************************************/
 
-
-#accordion {
-	background: white;
-	width: 100%;
-	margin: auto 0;
-	color: black;
+.events a {
 	text-decoration: none;
-	line-height: 27px;
+	color: white;
+}
+
+.events li a:hover {
+	color: #008388;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.events li {
+	border: dotted 2px white;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	line-height: 1.5;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.events li h2{
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+
+.events li img{
+	margin-top: 20px;
+	width:15%;
+}
+
+.events ul {
+	list-style: none;
+	line-height: 2;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.events {
+	background: rgba(0,0,0,0.3);
+	padding:10px;
+}
+
+.eventdetails h3 {
+	background: #008388;
 	display: block;
-	padding: 0;
-	
+	margin-bottom: 10px;
+	text-align: center;
 }
 
-#accordion h3 {
-	font-size: 16px;
-	line-height: 34px;
-	cursor: pointer;
-	background: rgba(0, 131, 136,0.5); 
-	padding-left:1em;
-	margin:0;
-	border-bottom:solid #008388 2px;
-}
-
-#accordion h3:hover {
-	color: #EE3123;
-}
-
-
-#accordion li {
-	list-style-type: none;
-	padding-left:15px;
-}
-
-#accordion ul{
-	padding:0;
-	column-count: 3;
--webkit-column-count: 3;
--moz-column-count: 3;
-column-rule: 1px outset #fff;
--webkit-column-rule: 1px outset #fff;
-}
-
-
-
-/************************ accordion icons ********************************
-*********************************************************************/
-
-
-.services:before{
-	content: url('../img/icon_services.png');
-	position: relative;
-	top: 10px;
-	margin-right: .25em;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.dining:before{
-	content: url('../img/icon_dining.png');
-	position: relative;
-	top: 10px;
-	margin-right: .25em;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.community:before{
-	content: url('../img/icon_community.png');
-	position: relative;
-	top: 10px;
-	margin-right: .25em;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.gallery:before{
-	content: url('../img/icon_gallery.png');
-	position: relative;
-	top: 10px;
-	margin-right: .25em;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.shopping:before{
-	content: url('../img/icon_shopping.png');
-	position: relative;
-	top: 10px;
-	margin-right: .25em;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.spirits:before{
-	content: url('../img/icon_shopping.png');
-	position: relative;
-	top: 10px;
-	margin-right: .25em;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-}
 
 /************************ sponsors page ********************************
 *********************************************************************/
 
 .corpsponsors{
-	width:50%;
+	text-align: center;
+	background:white;
 }
 
+.corpsponsors img{
+	width: 25%;
+	margin: 10px;
+}
 
 /************************ misc ********************************
 *********************************************************************/
@@ -700,8 +806,7 @@ column-rule: 1px outset #fff;
 /************************ footer ********************************
 *********************************************************************/
 footer{
-	background:black;
-	position: fixed;
+	background: rgba(0,0,0, 0.7);
 	bottom: 0;
 	position: fixed;
 	width: 100%;
@@ -711,61 +816,142 @@ footer{
 }
 
 #backToTop{
-	background: rgba(255,255,255,0.3);
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	left: 80%;
-	position: relative;
-	text-align: center;
-	margin:5px;
+width: 80%;
+height: 40px;
+text-align: right;
+margin: 0 auto;
+padding: 10px 20px 0px 20px;
+text-transform: uppercase;
+font-weight: 600;
+
+}
+
+#backToTop a{
+	text-decoration:none;
 }
 
 
 
-/************************ media queries tablet and above *************
+
+/************************ media queries small tablet *************
 *********************************************************************/
 
 @media screen and (min-width:480px){ 
 
-#accordion {
-background: white;
-width: 100%;
-margin: auto 0;
-color: black;
-text-decoration: none;
-line-height: 27px;
-display: block;
-padding: 0;
-clear: both;
+.filters{
+	text-align: center;
+	font-size: .75em;
 }
 
-#accordion ul {
-padding: 0;
-}
-
-#accordion h3 {
-font-size: 16px;
-line-height: 34px;
-cursor: pointer;
-background: rgba(0, 131, 136,0.5);
-padding-left: 1em;
-margin: 0;
-border-bottom: solid #008388 2px;
-clear: both;
-}
-
-#accordion li {
-list-style-type: none;
-}
-
-
-#accordion li h2{
-	clear:both;
-}
+.filters li {
+	display: inline-block;
+	padding: 5px;
+	border: dotted 2px white;
+	width: 40%;
+	margin-top: 5px;
 
 }
 
+a.markertrolley {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markerparking {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markercommunity {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markerdining {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markergallery {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markerservices {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markershopping {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+a.markerspirits {
+	background-position: center top;
+	background-position-y: -25px;
+	background-origin: content-box;
+	padding-top: 25px;
+	width: 100%;
+}
+
+
+
+
+
+
+}
+
+/************************ media queries smedium tablet *************
+*********************************************************************/
+
+@media screen and (min-width:642px){ 
+
+.filters li{	
+	width: 20%;
+}
+
+.eventcontainer {
+float: left;
+width: 40%;
+}
+
+.events li img {
+margin-top: 20px;
+width: 25%;
+}
+.eventdetails {
+float: right;
+width: 55%;
+text-align: left;
+border-left: solid;
+padding-left: 15px;
+}
+
+
+
+}
 /************************ media queries tablet *************
 *********************************************************************/
 
@@ -787,12 +973,19 @@ nav{
 	margin-bottom: 5px;
 }
 
+span.navtext {
+	font-size: .5em;
+	color: white;
+	display: block;
+	line-height:3;
+}
+
+
 .sticky{
-	padding:10px;
+	padding:5px;
 }
 
 .topcontainer {
-	background: green;
 	background-image: url('../img/brickbkg.png');
 	width: 100%;
 }
@@ -800,6 +993,21 @@ nav{
 .topcontainer img {
 	width: 50%;
 	float: left;
+}
+
+nav{
+	width: 57%;
+	margin-bottom:0px;
+}
+
+.icon-wrap{
+	padding-top: 5px;
+}
+
+.icon-effect-1 .icon:after {
+top: -4px;
+left: -4px;
+padding: 4px;
 }
 
 #upcoming {
@@ -810,8 +1018,8 @@ nav{
 	text-align: center;
 	height: 200px;
 	position: relative;
-	top: 120px;
-	font-size: 1.25em;
+	top: 90px;
+	font-size: 1em;
 }
 
 #upcoming img {
@@ -820,10 +1028,28 @@ nav{
 	clear: both;
 	margin-bottom: 10px;
 	float: none;
+	width: 50%;
 }
 
 .logo img {
 	float: right;
+}
+
+#upcoming .socialmedia img {
+	width: 5%;
+display: inline-block;
+margin-top: 10px;
+margin-right: 15px;
+}
+
+#upcoming .socialmedia img.theavenuelogo {
+width: 15%;
+margin-bottom: 10px;
+}
+
+
+.socialmedia {
+	height: 0px:;
 }
 
 .locationinfo{
@@ -831,9 +1057,6 @@ nav{
 }
 
 .locationinfo h2{
-	float: left;
-	width: 20%;
-	text-align: center;
 	padding-right: 10px;
 	font-size: 1.15em;
 	line-height: 1.75;
@@ -842,16 +1065,6 @@ nav{
 .locationinfo a.button{
 	float: right;
 	width: auto;
-}
-
-.iframecontainer {
-	float: right;
-	width: 70%;
-}
-
-iframe {
-	width: 100%;
-	height: 400px;
 }
 
 ul.parking{
@@ -869,13 +1082,74 @@ img.left {
 	padding-right: 20px;
 }
 
+h1.centerheading{
+	font-size:1.25em;
+	padding: 10px 50px;
+}
+
 span.nowraptext{
 	float: right;
 	width: 45%;
 	display: inline-block;
 }
 
+.corpsponsors img{
+	width: 15%;
 }
+
+
+}
+
+/************************ media queries large tablet *************
+*********************************************************************/
+
+@media screen and (min-width:850px){ 
+
+#upcoming{
+	top: 110px;
+font-size: 1.1em;
+}
+
+span.navtext{
+	font-size: .75em;
+}
+
+.filters li{
+	font-size: 1.3em;
+}
+
+.locationinfo h2{
+font-size: 1.25em;
+padding: 0 50px;
+
+}
+
+}
+
+
+/************************ media queries larger tablet *************
+*********************************************************************/
+
+@media screen and (min-width:1020px){ 
+
+.frankfort{
+	width:auto;
+}
+
+#upcoming{
+	font-size: 1.35em;
+}
+
+.locationinfo h2 {
+padding: 0 150px;
+}
+
+h1.centerheading{
+	padding: 10px 100px;
+}
+
+}
+
 
 /************************ media queries desktop *************
 *********************************************************************/
@@ -883,10 +1157,7 @@ span.nowraptext{
 @media screen and (min-width:1200px){ 
 
 .frankfort{
-	float: left;
-	margin: 0 10%;
-	font-size: 1.5em;
-	white-space: nowrap;
+margin: 0 5%;
 }
 
 nav{
@@ -894,8 +1165,17 @@ nav{
 	padding-right: 0;
 }
 
+
 #upcoming{
 	font-size: 2.25em;
+}
+
+.locationinfo h2 {
+	padding: 0px;
+}
+
+.filters li {
+	width: 10%;
 }
 
 ul.parking{
@@ -907,6 +1187,12 @@ ul.parking{
 	-moz-column-rule: 1px outset #fff;
 }
 
+h1.centerheading {
+	padding: 10px 10px;
+}
+
+
+
 
 }
 
@@ -917,6 +1203,14 @@ ul.parking{
 
 @media screen and (max-width: 699px){
 
+span.navtext {
+	display: none;
+}
 
+.map-canvas-container {
+	width: 100%;
+}
 
 }
+
+
